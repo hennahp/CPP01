@@ -1,4 +1,4 @@
-NAME = violence
+NAME = sed
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 
@@ -9,9 +9,7 @@ RED = \033[0;31m
 RESET = \033[0m
 
 SRCS = main.cpp \
-		Weapon.cpp \
-		HumanA.cpp \
-		HumanB.cpp
+		Sed.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -23,7 +21,6 @@ $(NAME): $(OBJS)
 
 %.o: %.cpp
 		@$(CC) $(CFLAGS) -c $< -o $@
-		@echo "$(CYAN)[Compiling] $<$(RESET)"
 
 clean:
 		@rm -f $(OBJS)
