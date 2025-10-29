@@ -6,5 +6,5 @@ HumanA::~HumanA() {}
 
 void HumanA::attack() const
 {
-    std::cout << name << " attacks with their " << weapon.getType() << std::endl;
+    std::cout << GREEN << name << " attacks with their " << weapon.getType() << RESET << std::endl;
 }

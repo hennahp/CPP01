@@ -1,6 +1,6 @@
 NAME = weapon
 CC = c++
-CFLAGS = -Wall -Werror -Wextra -std=c++98
+CFLAGS = -Wall -Werror -Wextra -std=c++98 -g
 
 CYAN = \033[0;36m
 GREEN = \033[0;32m
